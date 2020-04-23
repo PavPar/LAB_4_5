@@ -8,6 +8,10 @@ namespace LAB_4_5
 {
     class Program
     {
+        /// <summary>
+        /// Вход в программу
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             ConsoleSpeaker con = new ConsoleSpeaker();

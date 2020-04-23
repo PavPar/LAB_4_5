@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace LAB_4_5
 {
+    /// <summary>
+    /// Класс настроки Mac
+    /// </summary>
     class Mac_Instructions:AbstractFactory
     {
         private List<Instruction> InstructionList;
         private Mediator InstructionData;
         private ConsoleSpeaker con;
         private string[] MenuMSGS = { "Show All Instructions", "Change All Instructions", "Change Speific Instruction", "Exit" };
+        /// <summary>
+        /// Констркутор класса содержит в себе все инструкции для настройки
+        /// </summary>
         public Mac_Instructions()
         {
             InstructionList = new List<Instruction>();
@@ -29,6 +35,9 @@ namespace LAB_4_5
             InstructionList.Add(new Instruction(InstructionData, "10", "Проверка обновлений", "Влючена", "Выключена"));
             InstructionData.Instructions = InstructionList;
         }
+        /// <summary>
+        /// Создание иструкции
+        /// </summary>
         public void CreateInstructionSet()
         {
             while (true)

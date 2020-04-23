@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace LAB_4_5
 {
+    /// <summary>
+    /// Интерфейс посредника
+    /// </summary>
     interface Lead
     {
         void notify(Instruction sender);

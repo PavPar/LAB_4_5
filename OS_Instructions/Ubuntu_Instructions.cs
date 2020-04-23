@@ -10,10 +10,13 @@ namespace LAB_4_5
     {
         private List<Instruction> InstructionList;
         private Mediator InstructionData;
-        Ubuntu_Instructions()
+        private ConsoleSpeaker con;
+        private string[] MenuMSGS = { "Show All Instructions", "Change All Instructions", "Change Speific Instruction","Exit"};
+        public Ubuntu_Instructions()
         {
             InstructionList = new List<Instruction>();
             InstructionData = new Mediator();
+            con = new ConsoleSpeaker();
             InstructionList.Add(new Instruction(InstructionData, "U_1", "U gay?", "Ye", "Nah"));
             InstructionList.Add(new Instruction(InstructionData, "U_2", "U gay?", "Ye", "Nah"));
             InstructionList.Add(new Instruction(InstructionData, "U_3", "U gay?", "Ye", "Nah"));
@@ -23,7 +26,36 @@ namespace LAB_4_5
             InstructionList.Add(new Instruction(InstructionData, "U_7", "U gay?", "Ye", "Nah"));
             InstructionList.Add(new Instruction(InstructionData, "U_8", "U gay?", "Ye", "Nah"));
             InstructionList.Add(new Instruction(InstructionData, "U_9", "U gay?", "Ye", "Nah"));
-            InstructionList.Add(new Instruction(InstructionData, "U_10", "U gay?", "Ye", "Nah")); 
+            InstructionList.Add(new Instruction(InstructionData, "U_10", "U gay?", "Ye", "Nah"));
+            InstructionData.Instructions = InstructionList;
+        }
+        public void CreateInstructionSet()
+        {
+            while (true)
+            {
+                switch (con.showMenu("What do you want to do?", MenuMSGS)) {
+                    case 0:
+                        {
+                            InstructionData.showAllInstr();
+                            continue;
+                        }
+                    case 1:
+                        {
+                            InstructionData.setAllInstructions();
+                            continue;
+                        }
+                    case 2:
+                        {
+                            InstructionData.changeSpecificInstruction();
+                            continue;
+                        }
+                    case 3:
+                        {
+                            return;
+                        }
+                };
+            }
+            
         }
     }
 }

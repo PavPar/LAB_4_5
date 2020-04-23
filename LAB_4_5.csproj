@@ -44,10 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractFactory.cs" />
-    <Compile Include="Instruction.cs" />
-    <Compile Include="Lead.cs" />
+    <Compile Include="Mediator\Instruction.cs" />
+    <Compile Include="Mediator\Lead.cs" />
+    <Compile Include="ConsoleSpeaker.cs" />
     <Compile Include="OS_Instructions\Mac_Instructions.cs" />
-    <Compile Include="Mediator.cs" />
+    <Compile Include="Mediator\Mediator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OS_Instructions\Ubuntu_Instructions.cs" />

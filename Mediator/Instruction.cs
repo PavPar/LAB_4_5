@@ -14,7 +14,7 @@ namespace LAB_4_5
         private string msg_True;
         private string msg_False;
         private Mediator dialog;
-
+        private ConsoleSpeaker con;
         public Instruction(Mediator dialog,string InstructionID,string InstructionMsgText, string InstructionMsg_True, string InstructionMsg_False)
         {
             this.dialog = dialog;
@@ -23,11 +23,11 @@ namespace LAB_4_5
             status = false;
             msg_True = InstructionMsg_True;
             msg_False = InstructionMsg_False;
+            con = new ConsoleSpeaker();
         }
         public void SetInstruction()
         {
-            Console.WriteLine(msgText);
-            if (Console.ReadLine() == "y")
+            if (con.getUserInput_bool(msgText,msg_True,msg_False))
             {
                 status = true;
             }

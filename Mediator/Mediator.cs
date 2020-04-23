@@ -9,23 +9,36 @@ namespace LAB_4_5
     class Mediator:Lead
     {
         public List<Instruction> Instructions;
+        private ConsoleSpeaker con;
+        public Mediator()
+        {
+            Instructions = new List<Instruction>();
+            con = new ConsoleSpeaker();
+        }
         public void notify(Instruction sender)
         {
-            Console.WriteLine(sender.GetStatus());
         }
         public void showAllInstr()
         {
             foreach(Instruction instr in Instructions)
             {
-                Console.WriteLine(instr.GetMsgText() + "-" + instr.GetStatus());
+                con.showMessage_Normal(instr.GetMsgText() + "-" + instr.GetStatus());
             }
+            Console.WriteLine();
         }
-        public void SetAllInstructions()
+        public void setAllInstructions()
         {
             for(int i=0; i < Instructions.Count; i++)
             {
                 Instructions[i].SetInstruction();
+                Console.WriteLine();
             }
+        }
+
+        public void changeSpecificInstruction()
+        {
+            con.getInstructionMenu("Choose Instruction", Instructions).SetInstruction();
+            Console.WriteLine();
         }
     }
 }

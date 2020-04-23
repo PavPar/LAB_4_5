@@ -10,14 +10,35 @@ namespace LAB_4_5
     {
         static void Main(string[] args)
         {
-            Mediator test = new Mediator();
-            List<Instruction> temp = new List<Instruction>();
-            Instruction instr = new Instruction(test, "1", "U gay?", "Ye", "Nah");
-            temp.Add(instr);
-            test.Instructions = temp;
-            test.SetAllInstructions();
-            test.showAllInstr();
-            Console.ReadKey();
+            ConsoleSpeaker con = new ConsoleSpeaker();
+            string[] Menu = { "Windows", "Ubuntu", "MacOS", "Exit" };
+            AbstractFactory instr;
+            while (true)
+                switch (con.showMenu("Choose your OS", Menu))
+                {
+                    case 0:
+                        {
+                            instr = new Win_Instructions();
+                            instr.CreateInstructionSet();
+                            return;
+                        }
+                    case 1:
+                        {
+                           instr = new Ubuntu_Instructions();
+                           instr.CreateInstructionSet();
+                           return;
+                        }
+                    case 2:
+                        {
+                            instr = new Mac_Instructions();
+                            instr.CreateInstructionSet();
+                            return;
+                        }
+                    case 3:
+                        {
+                            return;
+                        }
+                };
         }
     }
 }

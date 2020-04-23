@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LAB_4_5
 {
-    class Ubuntu_Instructions
+    class Mac_Instructions:AbstractFactory
     {
+        public void CreateInstructionSet()
+        {
+
+        }
     }
 }

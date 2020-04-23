@@ -8,5 +8,10 @@ namespace LAB_4_5
 {
     class Mediator
     {
+        private List<Instruction> Inst_List;
+        public Mediator(List<Instruction> Inst_List)
+        {
+           Inst_List = new List<Instruction>();
+        }
     }
 }

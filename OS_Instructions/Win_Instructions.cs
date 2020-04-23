@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace LAB_4_5
 {
-    interface AbstractFactory
+    class Win_Instructions:AbstractFactory
     {
-        void CreateInstructionSet();
+        public void CreateInstructionSet()
+        {
+
+        }
     }
 }

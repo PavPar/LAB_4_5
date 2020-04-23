@@ -17,16 +17,16 @@ namespace LAB_4_5
             InstructionList = new List<Instruction>();
             InstructionData = new Mediator();
             con = new ConsoleSpeaker();
-            InstructionList.Add(new Instruction(InstructionData, "U_1", "U gay?", "Ye", "Nah"));
-            InstructionList.Add(new Instruction(InstructionData, "U_2", "U gay?", "Ye", "Nah"));
-            InstructionList.Add(new Instruction(InstructionData, "U_3", "U gay?", "Ye", "Nah"));
-            InstructionList.Add(new Instruction(InstructionData, "U_4", "U gay?", "Ye", "Nah"));
-            InstructionList.Add(new Instruction(InstructionData, "U_5", "U gay?", "Ye", "Nah"));
-            InstructionList.Add(new Instruction(InstructionData, "U_6", "U gay?", "Ye", "Nah"));
-            InstructionList.Add(new Instruction(InstructionData, "U_7", "U gay?", "Ye", "Nah"));
-            InstructionList.Add(new Instruction(InstructionData, "U_8", "U gay?", "Ye", "Nah"));
-            InstructionList.Add(new Instruction(InstructionData, "U_9", "U gay?", "Ye", "Nah"));
-            InstructionList.Add(new Instruction(InstructionData, "U_10", "U gay?", "Ye", "Nah"));
+            InstructionList.Add(new Instruction(InstructionData, "1", "Доступ к аккаунту Apple", "Вкл", "Выкл"));
+            InstructionList.Add(new Instruction(InstructionData, "2", "Доступ к Командной строке", "Разрешен", "Запрещен"));
+            InstructionList.Add(new Instruction(InstructionData, "3", "Доступ к BLUETOOTH", "Разрешен", "Запрещен"));
+            InstructionList.Add(new Instruction(InstructionData, "4", "Доступ к приложению через терминал", "Разрешен", "Запрещен"));
+            InstructionList.Add(new Instruction(InstructionData, "5", "Ограничение энергосбрегающего режима", "Разрешен", "Запрещен"));
+            InstructionList.Add(new Instruction(InstructionData, "6", "Выская контрастность", "Включена", "Выключена"));
+            InstructionList.Add(new Instruction(InstructionData, "7", "Требование пароля при обращении к приложению", "Включен", "Выключен"));
+            InstructionList.Add(new Instruction(InstructionData, "8", "Доступ к WI-Fi", "Разрешен", "Запрещен"));
+            InstructionList.Add(new Instruction(InstructionData, "9", "Автоматическое обновление приложения", "Разрешено", "Запрещено"));
+            InstructionList.Add(new Instruction(InstructionData, "10", "Проверка обновлений", "Влючена", "Выключена"));
             InstructionData.Instructions = InstructionList;
         }
         public void CreateInstructionSet()

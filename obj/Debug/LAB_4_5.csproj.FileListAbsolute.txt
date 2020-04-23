@@ -1,0 +1,7 @@
+C:\Users\Pasha\Desktop\C#\Sharp\LAB_4_5\bin\Debug\LAB_4_5.exe.config
+C:\Users\Pasha\Desktop\C#\Sharp\LAB_4_5\bin\Debug\LAB_4_5.exe
+C:\Users\Pasha\Desktop\C#\Sharp\LAB_4_5\bin\Debug\LAB_4_5.pdb
+C:\Users\Pasha\Desktop\C#\Sharp\LAB_4_5\obj\Debug\LAB_4_5.csprojAssemblyReference.cache
+C:\Users\Pasha\Desktop\C#\Sharp\LAB_4_5\obj\Debug\LAB_4_5.csproj.CoreCompileInputs.cache
+C:\Users\Pasha\Desktop\C#\Sharp\LAB_4_5\obj\Debug\LAB_4_5.exe
+C:\Users\Pasha\Desktop\C#\Sharp\LAB_4_5\obj\Debug\LAB_4_5.pdb

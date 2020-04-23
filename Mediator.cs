@@ -6,12 +6,26 @@ using System.Threading.Tasks;
 
 namespace LAB_4_5
 {
-    class Mediator
+    class Mediator:Lead
     {
-        private List<Instruction> Inst_List;
-        public Mediator(List<Instruction> Inst_List)
+        public List<Instruction> Instructions;
+        public void notify(Instruction sender)
         {
-           Inst_List = new List<Instruction>();
+            Console.WriteLine(sender.GetStatus());
+        }
+        public void showAllInstr()
+        {
+            foreach(Instruction instr in Instructions)
+            {
+                Console.WriteLine(instr.GetMsgText() + "-" + instr.GetStatus());
+            }
+        }
+        public void SetAllInstructions()
+        {
+            for(int i=0; i < Instructions.Count; i++)
+            {
+                Instructions[i].SetInstruction();
+            }
         }
     }
 }

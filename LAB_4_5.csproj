@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory.cs" />
+    <Compile Include="Instruction.cs" />
+    <Compile Include="Lead.cs" />
+    <Compile Include="OS_Instructions\Mac_Instructions.cs" />
+    <Compile Include="Mediator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OS_Instructions\Ubuntu_Instructions.cs" />
+    <Compile Include="OS_Instructions\Win_Instructions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
